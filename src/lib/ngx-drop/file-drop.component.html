@@ -1,7 +1,7 @@
-<div id="dropZone"  [className]="customstyle" [class.over]="dragoverflag"
+<div id="dropZone"  [className]="customstyle" [class.drop-zone-over]="dragoverflag"
     (drop)="dropFiles($event)"
     (dragover)="onDragOver($event)" (dragleave)="onDragLeave($event)">
-    <div class="content">
+    <div class="drop-zone-content">
         <ng-content></ng-content>
         {{headertext}}
     </div>
